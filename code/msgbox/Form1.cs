@@ -23,7 +23,7 @@ namespace msgbox
             DialogResult result = MessageBox.Show("마인크래프트를 실행하실건가요?", "실행하기", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (result == DialogResult.Yes)
             {
-                Process.Start("C:\\Program Files (x86)\\Minecraft Launcher\\MinecraftLauncher.exe");
+                Process.Start("C:\\Program Files (x86)\\Minecraft Launcher\\MinecraftLauncher.exe"); //경로
                 Application.Exit();
             }
             else if (result == DialogResult.No)
@@ -38,17 +38,3 @@ namespace msgbox
         }
     }
 }
-
-// DialogResult result = MessageBox.Show("Do you want to save changes?", "Confirmation", MessageBoxButtons.YesNoCancel);
-// if (result == DialogResult.Yes)
-// {
-    //...
-// }
-// else if (result == DialogResult.No)
-// {
-    //...
-// }
-// else
-//{
-    //...
-//}
